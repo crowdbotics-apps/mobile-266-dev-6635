@@ -18,7 +18,7 @@ export class _Blank extends React.Component {
     title: "Blank".toUpperCase()
   }
 
-  state = { Toggle_2: true, Toggle_3: true }
+  state = { Toggle_2: true, Toggle_3: true, Radio_2: true }
 
   render = () => (
     <View
@@ -117,6 +117,34 @@ export class _Blank extends React.Component {
         }}
         checked={this.state.Toggle_3}
         onChange={nextChecked => this.setState({ Toggle_3: nextChecked })}
+      />
+      <Radio
+        text="Radio button"
+        disabled={false}
+        style={{
+          marginLeft: 0,
+          marginRight: 0,
+          marginTop: 5,
+          marginBottom: 5,
+          paddingLeft: 5,
+          paddingRight: 5,
+          paddingTop: 5,
+          paddingBottom: 5,
+          overflow: "visible",
+          textAlign: "left",
+          verticalAlign: "baseline",
+          borderColor: "#000000",
+          borderStyle: "solid",
+          borderWidth: 0,
+          borderLeftWidth: 0,
+          borderRightWidth: 0,
+          borderTopWidth: 0,
+          borderBottomWidth: 0,
+          borderRadius: 0,
+          fontFamily: "System"
+        }}
+        checked={this.state.Radio_2}
+        onChange={nextChecked => this.setState({ Radio_2: nextChecked })}
       />
     </View>
   )
